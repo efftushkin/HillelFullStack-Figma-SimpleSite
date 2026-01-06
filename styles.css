@@ -1,0 +1,104 @@
+/* CSS Variables */
+:root {
+    --primary-color: #34547A;
+    --background-color: #EEEFF1;
+    --text-white: #FFFFFF;
+    --text-gray: #727272;
+    --text-black: #000000;
+    --font-regular: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --font-size-title: 48px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-regular);
+    font-weight: 400;
+}
+
+/* Container */
+.container {
+    width: 1920px;
+    height: 700px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 400px;
+    padding-top: 80px;
+}
+
+/* Menu */
+.menu {
+    margin-bottom: 160px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.menu-item {
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    color: var(--text-black);
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+
+.menu-item--active {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.title {
+    font-size: var(--font-size-title);
+    font-weight: 500;
+    color: var(--text-black);
+    margin-bottom: 60px;
+}
+
+/* Description */
+.description {
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    color: var(--text-gray);
+    line-height: 1.64;
+    max-width: 540px;
+    margin-bottom: 65px;
+}
+
+/* Button */
+.button {
+    width: 225px;
+    height: 65px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    font-family: var(--font-regular);
+    border: 1px solid var(--text-white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.1em;
+}
+
+.cta-button:hover {
+    background-color: var(--text-white);
+    color: var(--primary-color);
+}
+
