@@ -91,8 +91,7 @@ body {
     font-size: var(--font-size-base);
     font-weight: 400;
     font-family: var(--font-regular);
-    border: 1px solid var(--text-white);
+    border: 0;
     cursor: pointer;
-    transition: all 0.3s ease;
     letter-spacing: 0.1em;
 }
