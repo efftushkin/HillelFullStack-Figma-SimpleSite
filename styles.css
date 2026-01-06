@@ -96,9 +96,3 @@ body {
     transition: all 0.3s ease;
     letter-spacing: 0.1em;
 }
-
-.cta-button:hover {
-    background-color: var(--text-white);
-    color: var(--primary-color);
-}
-
