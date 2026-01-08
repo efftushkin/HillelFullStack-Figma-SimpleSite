@@ -100,24 +100,16 @@ body {
     letter-spacing: 0.1em;
 }
 
-/* About Wrapper */
-.about-wrapper {
-    margin-top: 110px;
+/* About Section */
+.about-section {
     width: 1920px;
     height: 360px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-/* About Section */
-.about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .about-container {
+    margin-top: 110px;
     width: 540px;
     height: 150px;
     display: flex;
@@ -144,7 +136,6 @@ body {
 
 /* Stats Section */
 .stats-section {
-    margin-top: 100px;
     width: 1920px;
     height: 250px;
     background-color: var(--primary-color);
