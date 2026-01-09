@@ -73,7 +73,6 @@ body {
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-medium);
     color: var(--text-black);
-    margin-bottom: 60px;
 }
 
 /* Description */
@@ -83,6 +82,7 @@ body {
     color: var(--text-gray);
     line-height: 1.64;
     max-width: 540px;
+    margin-top: 60px;
     margin-bottom: 65px;
 }
 
