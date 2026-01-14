@@ -28,13 +28,14 @@ body {
 
 /* Container */
 .container {
-  width: 1920px;
-  height: 700px;
+  margin: 0 calc(50vw - 960px);
+  min-height: 700px;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   padding-left: 400px;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /* Menu */
@@ -55,11 +56,11 @@ body {
   cursor: pointer;
   text-align: left;
   letter-spacing: 0.1em;
-}
 
-.menu-item--active {
-  font-weight: var(--font-weight-medium);
-  color: var(--primary-color);
+  &:hover {
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-color);
+  }
 }
 
 /* Content */
@@ -70,6 +71,7 @@ body {
 
 /* Title */
 .title {
+  margin: 0 0;
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-medium);
   color: var(--text-black);
@@ -102,16 +104,16 @@ body {
 
 /* About Section */
 .about-section {
-  width: 1920px;
-  height: 360px;
+  margin: 0 calc(50vw - 960px);
+  min-height: 360px;
   display: flex;
   justify-content: center;
+  padding-top: 110px;
+  padding-bottom: 80px;
 }
 
 .about-container {
-  margin-top: 110px;
   width: 540px;
-  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,8 +138,8 @@ body {
 
 /* Stats Section */
 .stats-section {
-  width: 1920px;
-  height: 250px;
+  margin: 0 calc(50vw - 960px);
+  min-height: 250px;
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
@@ -153,7 +155,7 @@ body {
 }
 
 .stat-item {
-  height: 50px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -181,9 +183,11 @@ body {
   font-weight: var(--font-weight-regular);
   color: var(--text-white);
 }
+
 /* --- How I Work Section --- */
 .how-work {
-  width: 1920px; /* Matching your partner's width */
+  margin: 0 calc(50vw - 960px);
+  min-height: 1005px;
   padding: 100px 0;
   background-color: var(--background-color);
   display: flex;
@@ -237,9 +241,10 @@ body {
 
 /* Footer Styles */
 .footer {
+  margin: 0 calc(50vw - 960px);
+  min-height: 150px;
   background-color: var(--primary-color);
   padding: 50px 0;
-  width: 100%;
 }
 
 .footer-container {
