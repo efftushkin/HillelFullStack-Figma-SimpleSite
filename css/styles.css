@@ -497,14 +497,14 @@ body {
   }
 
   .container {
-    margin: 0 !important;
-    width: 100% !important;
+    margin: 0;
+    width: 100%;
     /* We must reset the 400px padding from the desktop version */
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    padding-top: 60px !important;
-    padding-bottom: 60px !important;
-    min-height: auto !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: auto;
 
     display: flex;
     flex-direction: column;
@@ -521,17 +521,17 @@ body {
   }
 
   .description {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     max-width: 540px; /* Limits width for readability but stays centered */
   }
 
   .button {
     /* Standard trick to center a block element */
-    margin: 0 auto !important;
+    margin: 0 auto;
     display: block;
     /* Resetting any float if your partner used it */
-    float: none !important;
+    float: none;
   }
 }
