@@ -268,3 +268,67 @@ body {
   font-size: 13px;
   opacity: 1;
 }
+
+/* --- IPAD AIR OPTIMIZATION (820px) --- */
+
+@media screen and (max-width: 820px) {
+  /* 1. Prevent the site from being too wide/stretched */
+  .container,
+  .about-container,
+  .how-work-container,
+  .stats-container {
+    max-width: 600px; /* Constrains the width to keep it compact */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* 2. Fix the "Huge" sections by reducing padding */
+  section,
+  .content {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    min-height: auto !important; /* Removes fixed heights that cause empty space */
+  }
+
+  /* 3. Make typography much smaller */
+  .title {
+    font-size: 24px !important;
+    margin-bottom: 10px;
+  }
+
+  .about-title {
+    font-size: 20px !important;
+  }
+
+  .description,
+  .about-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* 4. Fix the Stats (icons and numbers) */
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 neat columns */
+    gap: 15px;
+  }
+
+  .stat-icon {
+    width: 30px; /* Smaller icons */
+  }
+
+  .stat-number {
+    font-size: 18px;
+  }
+
+  /* 5. Fix the video/image size */
+  .video-box {
+    max-width: 400px; /* Keeps the video box small and centered */
+    margin: 0 auto;
+  }
+
+  .video-img {
+    width: 100%;
+    height: auto;
+  }
+}
