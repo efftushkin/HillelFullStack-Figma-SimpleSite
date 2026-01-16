@@ -6,10 +6,25 @@
   --text-gray: #727272;
   --text-black: #000000;
   --font-regular: "Roboto", sans-serif;
+
+  /* Font Sizes */
   --font-size-base: 16px;
   --font-size-title: 48px;
   --font-size-subtitle: 32px;
   --font-size-stat: 21px;
+  --font-size-toggler: 24px;
+  --font-size-footer-author: 21px;
+  --font-size-footer-copy: 13px;
+
+  /* Mobile Font Sizes */
+  --font-size-mobile-small: 12px;
+  --font-size-mobile-base: 14px;
+  --font-size-mobile-medium: 16px;
+  --font-size-mobile-stat: 18px;
+  --font-size-mobile-title: 32px;
+  --font-size-mobile-subtitle: 24px;
+
+  /* Font Weights */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
 }
@@ -48,7 +63,7 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 24px;
+  font-size: var(--font-size-toggler);
   color: var(--primary-color);
   cursor: pointer;
 }
@@ -269,14 +284,14 @@ body {
 
 .footer-author {
   color: var(--text-white);
-  font-size: 21px;
-  font-weight: 500;
+  font-size: var(--font-size-footer-author);
+  font-weight: var(--font-weight-medium);
   margin-bottom: 20px;
 }
 
 .footer-copy {
   color: var(--text-white);
-  font-size: 13px;
+  font-size: var(--font-size-footer-copy);
   opacity: 1;
 }
 
@@ -323,19 +338,19 @@ body {
   }
 
   .menu-item {
-    font-size: 14px;
+    font-size: var(--font-size-mobile-base);
     margin-top: 10px;
   }
 
   /* Title */
   .title {
-    font-size: 32px;
+    font-size: var(--font-size-mobile-title);
     text-align: center;
   }
 
   /* Description */
   .description {
-    font-size: 14px;
+    font-size: var(--font-size-mobile-base);
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -347,7 +362,7 @@ body {
     width: 100%;
     max-width: 343px;
     height: 55px;
-    font-size: 14px;
+    font-size: var(--font-size-mobile-base);
     align-self: center;
   }
 
@@ -363,13 +378,13 @@ body {
   }
 
   .about-title {
-    font-size: 24px;
+    font-size: var(--font-size-mobile-subtitle);
     margin-bottom: 20px;
   }
 
   .about-text {
     width: 100%;
-    font-size: 14px;
+    font-size: var(--font-size-mobile-base);
   }
 
   /* Stats Section */
@@ -401,11 +416,11 @@ body {
   }
 
   .stat-number {
-    font-size: 18px;
+    font-size: var(--font-size-mobile-stat);
   }
 
   .stat-label {
-    font-size: 14px;
+    font-size: var(--font-size-mobile-base);
   }
 
   /* How I Work Section */
@@ -420,13 +435,13 @@ body {
   }
 
   .how-work .about-title {
-    font-size: 24px;
+    font-size: var(--font-size-mobile-subtitle);
     margin-bottom: 20px;
   }
 
   .how-work .about-text {
     width: 100%;
-    font-size: 14px;
+    font-size: var(--font-size-mobile-base);
     margin-bottom: 20px;
   }
 
@@ -455,12 +470,12 @@ body {
   }
 
   .footer-author {
-    font-size: 18px;
+    font-size: var(--font-size-mobile-stat);
     margin-bottom: 10px;
   }
 
   .footer-copy {
-    font-size: 12px;
+    font-size: var(--font-size-mobile-small);
   }
 }
 
@@ -502,13 +517,13 @@ body {
 
   /* 4. Typography adjustments */
   .title {
-    font-size: 32px;
+    font-size: var(--font-size-mobile-title);
     text-align: center;
   }
 
   .description,
   .about-text {
-    font-size: 16px;
+    font-size: var(--font-size-mobile-medium);
     margin-left: auto;
     margin-right: auto;
   }
