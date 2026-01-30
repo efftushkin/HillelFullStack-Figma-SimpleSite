@@ -1,0 +1,68 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Content wrapper
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+// Title and Text
+.title {
+  margin: 0;
+  font-size: $font-size-title;
+  font-weight: $font-weight-medium;
+  color: $color-black;
+}
+
+.description {
+  font-size: $font-size-base;
+  font-weight: $font-weight-regular;
+  color: $color-gray;
+  line-height: 1.64;
+  max-width: 540px;
+  margin-top: 60px;
+  margin-bottom: 65px;
+}
+
+// Reusable Button
+.button {
+  width: 225px;
+  height: 65px;
+  background-color: $color-primary;
+  color: $color-white;
+  font-size: $font-size-base;
+  font-weight: $font-weight-regular;
+  font-family: $font-main;
+  border: 0;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+
+// Sections (About, Stats, How We Work)
+.about-section {
+  margin: $desktop-margin;
+  min-height: 360px;
+  display: flex;
+  justify-content: center;
+  padding: 110px 0 80px;
+}
+
+.stats-section {
+  margin: $desktop-margin;
+  min-height: 250px;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+}
+
+.how-work {
+  margin: $desktop-margin;
+  min-height: 1005px;
+  padding: 100px 0;
+  background-color: $color-bg;
+  display: flex;
+  justify-content: center;
+}

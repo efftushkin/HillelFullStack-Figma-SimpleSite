@@ -1,0 +1,81 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.container {
+  margin: $desktop-margin;
+  min-height: 700px;
+  background-color: $color-bg;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 80px 400px;
+}
+
+@include mobile {
+  .container {
+    margin: 0;
+    padding: 40px 16px;
+    min-height: auto;
+  }
+}
+
+@include tablet {
+  .container {
+    margin: 0 !important;
+    width: 100% !important;
+    padding: 60px 20px !important;
+    min-height: auto !important;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.menu {
+  margin-bottom: 160px;
+
+  &-list {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+  }
+
+  &-item {
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    color: $color-black;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+
+    &:hover {
+      font-weight: $font-weight-medium;
+      color: $color-primary;
+    }
+  }
+}
+
+.footer {
+  margin: $desktop-margin;
+  min-height: 150px;
+  background-color: $color-primary;
+  padding: 50px 0;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 406px;
+    box-sizing: border-box;
+  }
+
+  &-author {
+    color: $color-white;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &-copy {
+    color: $color-white;
+    font-size: 13px;
+  }
+}
