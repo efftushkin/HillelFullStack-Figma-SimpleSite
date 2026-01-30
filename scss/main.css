@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 calc(50vw - 960px);
+  min-height: 700px;
+  background-color: #eeeff1;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 80px 400px;
+}
+
+@media (max-width: 819px) {
+  .container {
+    margin: 0;
+    padding: 40px 16px;
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 1150px) and (min-width: 820px) {
+  .container {
+    margin: 0 !important;
+    width: 100% !important;
+    padding: 60px 20px !important;
+    min-height: auto !important;
+    align-items: center;
+    text-align: center;
+  }
+}
+.menu {
+  margin-bottom: 160px;
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+.menu-item {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+.menu-item:hover {
+  font-weight: 500;
+  color: #34547a;
+}
+
+.footer {
+  margin: 0 calc(50vw - 960px);
+  min-height: 150px;
+  background-color: #34547a;
+  padding: 50px 0;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 406px;
+  box-sizing: border-box;
+}
+.footer-author {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.footer-copy {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  line-height: 1.64;
+  max-width: 540px;
+  margin-top: 60px;
+  margin-bottom: 65px;
+}
+
+.button {
+  width: 225px;
+  height: 65px;
+  background-color: #34547a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  border: 0;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+
+.about-section {
+  margin: 0 calc(50vw - 960px);
+  min-height: 360px;
+  display: flex;
+  justify-content: center;
+  padding: 110px 0 80px;
+}
+
+.stats-section {
+  margin: 0 calc(50vw - 960px);
+  min-height: 250px;
+  background-color: #34547a;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+}
+
+.how-work {
+  margin: 0 calc(50vw - 960px);
+  min-height: 1005px;
+  padding: 100px 0;
+  background-color: #eeeff1;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

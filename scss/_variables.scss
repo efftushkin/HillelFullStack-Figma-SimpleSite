@@ -1,0 +1,22 @@
+// --- Colors ---
+$color-primary: #34547a;
+$color-bg: #eeeff1;
+$color-white: #ffffff;
+$color-gray: #727272;
+$color-black: #000000;
+
+// --- Typography ---
+$font-main: "Roboto", sans-serif;
+
+$font-size-base: 16px;
+$font-size-title: 48px;
+$font-size-subtitle: 32px;
+$font-size-stat: 21px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+// --- Layout ---
+// This is the calculation for the container side margins you used
+$container-width: 1920px;
+$desktop-margin: 0 calc(50vw - 960px);
